@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhasebe - Tasarım</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <h1>Muhasebe</h1>
+        <p>Modül Paneli</p>
+      </div>
+      <nav class="menu">
+        <button class="menu__item" data-target="panel">
+          <span>Panel</span>
+        </button>
+        <button class="menu__item" data-target="ajanda">
+          <span>Ajanda & Takvim</span>
+        </button>
+        <button class="menu__item" data-target="genel-giderler">
+          <span>Genel Giderler</span>
+        </button>
+
+        <div class="menu__group">
+          <button class="menu__item menu__item--toggle" data-toggle="satis-yonetimi">
+            <span>Satış Yönetimi</span>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="submenu" id="satis-yonetimi">
+            <a href="#">Faturalar</a>
+            <a href="#">İrsaliyeler</a>
+            <a href="#">Siparişler</a>
+            <a href="#">Teklifler</a>
+            <a href="#">Teklif Kalemleri</a>
+            <a href="#">Fatura Verileri</a>
+          </div>
+        </div>
+
+        <div class="menu__group">
+          <button class="menu__item menu__item--toggle" data-toggle="satin-alma">
+            <span>Satın Alma</span>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="submenu" id="satin-alma">
+            <a href="#">Faturalar</a>
+            <a href="#">İrsaliyeler</a>
+            <a href="#">Siparişler</a>
+            <a href="#">Teklifler</a>
+            <a href="#">Teklif Kalemleri</a>
+          </div>
+        </div>
+
+        <button class="menu__item" data-target="ihracat">
+          <span>İhracat Yönetimi</span>
+        </button>
+        <button class="menu__item" data-target="ibkb">
+          <span>İBKB Yönetimi</span>
+        </button>
+        <button class="menu__item" data-target="urun-hizmet">
+          <span>Ürün ve Hizmetler</span>
+        </button>
+
+        <div class="menu__group">
+          <button class="menu__item menu__item--toggle" data-toggle="cari-hesaplar">
+            <span>Cari Hesaplar</span>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="submenu" id="cari-hesaplar">
+            <a href="#">Cariler</a>
+            <a href="#">Personeller</a>
+            <a href="#">Datalar (Cari Türleri vb.)</a>
+          </div>
+        </div>
+
+        <div class="menu__group">
+          <button class="menu__item menu__item--toggle" data-toggle="finans">
+            <span>Finans</span>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="submenu" id="finans">
+            <a href="#">Bankalar</a>
+            <a href="#">Kasalar</a>
+            <a href="#">Kredi Kartları</a>
+            <a href="#">Çekler</a>
+            <a href="#">Senetler</a>
+          </div>
+        </div>
+
+        <button class="menu__item" data-target="projeler">
+          <span>Projeler</span>
+        </button>
+        <button class="menu__item" data-target="raporlar">
+          <span>Raporlar</span>
+        </button>
+
+        <div class="menu__group">
+          <button class="menu__item menu__item--toggle" data-toggle="sirketim">
+            <span>Şirketim</span>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="submenu" id="sirketim">
+            <a href="#">Şirket Bilgileri</a>
+            <a href="#">Makineler</a>
+            <a href="#">Araçlar</a>
+            <a href="#">Diğer Araç Gereçler</a>
+            <a href="#">Şirket Dosyaları</a>
+          </div>
+        </div>
+
+        <div class="menu__group">
+          <button class="menu__item menu__item--toggle" data-toggle="kurlar">
+            <span>Kurlar</span>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="submenu" id="kurlar">
+            <a href="#">Bugünün Kurları</a>
+            <a href="#">TCMB Kurları</a>
+          </div>
+        </div>
+
+        <button class="menu__item" data-target="dosya-yoneticisi">
+          <span>Dosya Yöneticisi</span>
+        </button>
+
+        <div class="menu__group">
+          <button class="menu__item menu__item--toggle" data-toggle="ayarlar">
+            <span>Ayarlar</span>
+            <span class="chevron">▾</span>
+          </button>
+          <div class="submenu" id="ayarlar">
+            <a href="#">Kullanıcı Yönetimi</a>
+            <a href="#">Dosya Yöneticisi</a>
+            <a href="#">Data Yönetimi (Para Birimleri, Ülkeler, Şehirler)</a>
+          </div>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="content">
+      <header class="content__header">
+        <h2>Genel Bakış</h2>
+        <p>Seçtiğiniz modülün içeriği burada görüntülenecek.</p>
+      </header>
+
+      <section class="content__grid">
+        <article class="card">
+          <h3>Hızlı Erişim</h3>
+          <p>Önemli modüller ve özet bilgiler için alan.</p>
+          <button>Yeni Kayıt</button>
+        </article>
+        <article class="card">
+          <h3>Güncel Durum</h3>
+          <p>Takvim, yapılacaklar ve finansal özet kartları.</p>
+          <button>Detayları Gör</button>
+        </article>
+        <article class="card">
+          <h3>Bildirimler</h3>
+          <p>Fatura, sipariş ve ödeme hatırlatmaları.</p>
+          <button>Listeyi Aç</button>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
